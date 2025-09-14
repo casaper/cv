@@ -1,0 +1,56 @@
+# macOS - the two lines after Icon[ are required
+Icon[
+]
+
+._*
+.DS_Store
+__MACOSX/
+.AppleDouble
+.LSOverride
+# Linux
+*~
+.Trash-*
+.directory
+.fuse_hidden*
+# dotenv
+/.env*.local
+# Editors&IDEs
+*~
+tags
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+*.vsix
+*.vscode/*.code-workspace
+.idea
+.cursor/rules/nx-rules.mdc
+.~lock.*#
+*.tmp
+~$*.doc*
+~$*.dot*
+~$*.xls*
+~$*.ppt*
+/project-files
+# Node.js
+/*-debug.log*
+/*-error.log*
+dist
+tmp
+out-tsc
+node_modules
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+# Nx specific
+.nx/cache
+.nx/workspace-data
+.github/instructions/nx.instructions.md
+
+.angular
