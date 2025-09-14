@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { Header } from './components/header/header';
+import { HeaderComponent } from './components/header/header.component';
+import { NameTitleLeadComponent } from './components/name-title-lead/name-title-lead.component';
 
 @Component({
-  imports: [RouterModule, Header],
+  imports: [RouterModule, HeaderComponent, NameTitleLeadComponent],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class App {
-  protected title = 'cv';
 }
