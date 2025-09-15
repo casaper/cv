@@ -7,7 +7,9 @@
     "module": "preserve",
     "lib": ["es2020", "dom"],
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@cv/md-converted": ["libs/md-converted/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

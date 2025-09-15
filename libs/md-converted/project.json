@@ -1,0 +1,40 @@
+{
+  "name": "md-converted",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/md-converted/src",
+  "prefix": "md-converted",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "pre-build": {
+      "executor": "nx:run-commands",
+      "outputs": [
+        "{workspaceRoot}/libs/md-converted/src/lib/en.component.html",
+        "{workspaceRoot}/libs/md-converted/src/lib/de.component.html"
+      ],
+      "cache": false,
+      "options": {
+        "command": "tsx libs/md-converted/pre-build/convert-md-to-template.ts"
+      }
+    },
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/md-converted/ng-package.json",
+        "tsConfig": "libs/md-converted/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/md-converted/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production",
+      "dependsOn": ["pre-build"]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
