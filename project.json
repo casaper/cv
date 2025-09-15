@@ -68,7 +68,8 @@
           "buildTarget": "cv:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "dependsOn": [{ "target": "build", "projects": ["md-converted"] }]
     },
     "extract-i18n": {
       "executor": "@angular/build:extract-i18n",

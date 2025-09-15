@@ -17,7 +17,18 @@
     "@angular/platform-browser": "~20.2.0",
     "@angular/platform-browser-dynamic": "~20.2.0",
     "@angular/router": "~20.2.0",
+    "@mdit/plugin-abbr": "^0.22.1",
+    "@mdit/plugin-attrs": "^0.23.1",
+    "@mdit/plugin-dl": "^0.22.1",
+    "@mdit/plugin-footnote": "^0.22.2",
+    "@mdit/plugin-sub": "^0.22.1",
+    "@mdit/plugin-sup": "^0.22.1",
+    "@mdit/plugin-tasklist": "^0.22.1",
+    "@types/markdown-it": "^14.1.2",
+    "glob": "^11.0.3",
+    "markdown-it": "^14.1.0",
     "rxjs": "~7.8.0",
+    "tsx": "^4.20.5",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
