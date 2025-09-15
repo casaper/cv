@@ -77,10 +77,31 @@
       "e2eTestRunner": "playwright",
       "linter": "eslint",
       "style": "scss",
-      "unitTestRunner": "jest"
+      "unitTestRunner": "jest",
+      "standalone": true,
+      "strict": true,
+      "routing": true
     },
     "@nx/angular:component": {
       "style": "scss",
+      "changeDetection": "OnPush",
+      "standalone": true,
+      "displayBlock": true,
+      "type": "component"
+    },
+    "@schematics/angular:component": {
+      "style": "scss",
+      "changeDetection": "OnPush",
+      "standalone": true,
+      "displayBlock": true,
+      "type": "component"
+    },
+    "@nx/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "strict": true,
+      "style": "scss",
+      "standalone": true,
       "changeDetection": "OnPush"
     }
   },
