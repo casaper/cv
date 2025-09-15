@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 /* You can add global styles to this file, and also import other style files */
-.md-content {
+md-converted-en,
+md-converted-de {
   h2 {
     @apply text-2xl lg:text-4xl font-bold mt-5 mb-1;
   }
