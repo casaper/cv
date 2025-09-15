@@ -54,3 +54,4 @@ testem.log
 .github/instructions/nx.instructions.md
 
 .angular
+libs/md-converted/src/lib/*.component.html
