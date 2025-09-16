@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
-import { HeaderComponent } from './components/header/header.component';
+import { SUPPORTED_LANGS } from './constants/i18n';
 
 @Component({
-  imports: [RouterModule, HeaderComponent],
+  imports: [RouterModule],
   selector: 'app-root',
-  templateUrl: './app.html',
-  styleUrl: './app.scss',
+  template: `<router-outlet />`,
 })
-export class App {}
+export class App {
+  private readonly translate = inject(TranslateService);
+  constructor() {
+    this.translate.addLangs(SUPPORTED_LANGS);
+  }
+}

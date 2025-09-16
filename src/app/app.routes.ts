@@ -3,17 +3,19 @@ import { Route } from '@angular/router';
 export const appRoutes: Route[] = [
   {
     path: '',
-    redirectTo: 'en',
+    title: 'Kaspar Vollenweider - CV',
+    loadComponent: () =>
+      import('./components/main-content/main-content.component').then(
+        m => m.MainContentComponent
+      ),
+  },
+  {
+    path: ':lang',
     pathMatch: 'full',
-  },
-  {
-    path: 'en',
+    title: 'Kaspar Vollenweider - CV',
     loadComponent: () =>
-      import('@cv/md-converted').then(m => m.MdConvertedEnComponent),
-  },
-  {
-    path: 'de',
-    loadComponent: () =>
-      import('@cv/md-converted').then(m => m.MdConvertedDeComponent),
+      import('./components/main-content/main-content.component').then(
+        m => m.MainContentComponent
+      ),
   },
 ];
