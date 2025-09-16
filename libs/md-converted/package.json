@@ -4,7 +4,7 @@
   "peerDependencies": {
     "@angular/core": "^20.2.0",
     "markdown-it": "^14.1.0",
-    "prettier": "^2.6.2",
+    "prettier": "^3.6.2",
     "@mdit/plugin-attrs": "^0.23.1",
     "@mdit/plugin-abbr": "^0.22.1",
     "@mdit/plugin-dl": "^0.22.1",

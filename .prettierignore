@@ -4,3 +4,10 @@
 /.nx/cache
 /.nx/workspace-data
 .angular
+package-lock.json
+libs/md-converted/src/mds
+/node_modules
+/.idea
+/.vscode
+/tmp
+/.angular
