@@ -10,8 +10,8 @@ import {
 } from '@angular/platform-browser';
 import {
   provideRouter,
-  // withHashLocation,
   withComponentInputBinding,
+  withHashLocation,
   // withDebugTracing,
 } from '@angular/router';
 import { provideTranslateService } from '@ngx-translate/core';
@@ -28,7 +28,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       appRoutes,
       // withDebugTracing(),
-      // withHashLocation() // hash location for GitHub Pages
+      withHashLocation(), // hash location for GitHub Pages
       withComponentInputBinding() // enable @Input binding from route data
     ),
     provideClientHydration(withEventReplay()),
