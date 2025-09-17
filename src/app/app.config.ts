@@ -34,7 +34,7 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay()),
     provideTranslateService({
       loader: provideTranslateHttpLoader({
-        prefix: '/i18n/',
+        prefix: 'i18n/',
         suffix: '.json',
       }),
       fallbackLang: FALLBACK_LANG,
