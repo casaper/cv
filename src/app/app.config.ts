@@ -12,6 +12,7 @@ import {
   provideRouter,
   withComponentInputBinding,
   withHashLocation,
+  withRouterConfig,
   // withDebugTracing,
 } from '@angular/router';
 import { provideTranslateService } from '@ngx-translate/core';
@@ -28,6 +29,9 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       appRoutes,
       // withDebugTracing(),
+      withRouterConfig({
+        urlUpdateStrategy: 'eager', // default is 'deferred'
+      }),
       withHashLocation(), // hash location for GitHub Pages
       withComponentInputBinding() // enable @Input binding from route data
     ),

@@ -2,65 +2,89 @@
   <ul class="flex justify-center contact-list">
     <li class="hidden sm:block">
       <a
-        href="https://www.openstreetmap.org/#map=18/47.383318/8.529403"
+        class="text-blue-500 hover:opacity-85 underline hover:no-underline"
+        [title]="'header.home.title' | translate"
+        [href]="'header.home.href' | translate"
         target="_blank"
-        rel="noopener"
-        title="Home Area on OpenStreetMap"
-        class="text-blue-500 hover:opacity-85 hover:underline"
+        rel="noopener noreferrer"
       >
-        <span class="hidden md:inline">8005 </span>
-        <span class="inline-block mr-0"> Zürich </span>
-        <span class="hidden ml-0 xl:inline-block">, Switzerland</span>
+        <span
+          class="hidden underline hover:no-underline md:inline"
+          aria-hidden="true"
+          >8005
+        </span>
+        <span
+          class="inline-block underline hover:no-underline mr-0"
+          aria-hidden="true"
+        >
+          Zürich
+        </span>
+        <span
+          class="hidden ml-0 underline hover:no-underline xl:inline-block"
+          aria-hidden="true"
+          translate="header.home.switzerland"
+        >
+        </span>
+        <span class="sr-only" translate="header.home.srOnly"> </span>
       </a>
     </li>
 
     <li>
       <a
-        href="mailto:me@casaper.dev"
+        class="text-blue-500 hover:opacity-85 underline hover:no-underline"
+        [title]="'header.email.title' | translate"
+        [href]="'header.email.href' | translate"
         target="_blank"
         rel="noopener"
-        title="Email Contact"
-        class="text-blue-500 hover:opacity-85 hover:underline"
+        translate="header.email.text"
       >
-        me&#64;casaper.dev
       </a>
     </li>
 
     <li>
       <a
-        href="tel:0041762862998"
+        class="text-blue-500 hover:opacity-85 underline hover:no-underline"
+        [title]="'header.phone.title' | translate"
+        [href]="'header.phone.href' | translate"
         target="_blank"
         rel="noopener"
-        title="Phone Contact +41 76 286 29 98"
-        class="text-blue-500 hover:opacity-85 hover:underline"
       >
-        <span class="hidden md:inline"> 076 286 29 98 </span>
-        <span class="hidden sm:inline md:hidden"> 0762862998 </span>
-        <span class="inline sm:hidden"> 📞 </span>
+        <span
+          class="hidden md:inline"
+          aria-hidden="true"
+          translate="header.phone.numberWide"
+        ></span>
+        <span
+          class="hidden sm:inline md:hidden"
+          aria-hidden="true"
+          translate="header.phone.numberNarrow"
+        >
+        </span>
+        <span class="sm:hidden" aria-hidden="true"> 📞 </span>
+        <span class="sr-only" translate="header.phone.srOnly"> </span>
       </a>
     </li>
 
     <li>
       <a
-        href="https://www.linkedin.com/in/kaspar-vollenweider/"
+        class="text-blue-500 hover:opacity-85 underline hover:no-underline"
+        [title]="'header.linkedin.title' | translate"
+        [href]="'header.linkedin.href' | translate"
         target="_blank"
-        rel="noopener"
-        title="LinkedIn.com Profile"
-        class="text-blue-500 hover:opacity-85 hover:underline"
-      >
-        LinkedIn
-      </a>
+        rel="noopener noreferrer"
+        translate="header.linkedin.text"
+      ></a>
     </li>
 
     <li>
       <a
-        href="https://github.com/casaper/"
+        class="text-blue-500 hover:opacity-85 underline hover:no-underline"
+        [title]="'header.github.title' | translate"
+        [href]="'header.github.href' | translate"
         target="_blank"
-        rel="noopener"
-        title="GitHub.com Profile"
-        class="text-blue-500 hover:opacity-85 hover:underline"
+        rel="noopener noreferrer"
+        translate="header.github.text"
       >
-        GitHub
       </a>
     </li>
   </ul>

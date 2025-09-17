@@ -12,7 +12,11 @@ import {
   MdConvertedDeComponent,
   MdConvertedEnComponent,
 } from '@cv/md-converted';
-import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import {
+  TranslateDirective,
+  TranslatePipe,
+  TranslateService,
+} from '@ngx-translate/core';
 import { filter, map } from 'rxjs';
 
 import { HeaderComponent } from '../header/header.component';
@@ -23,6 +27,7 @@ import { HeaderComponent } from '../header/header.component';
     HeaderComponent,
     RouterModule,
     TranslatePipe,
+    TranslateDirective,
     MdConvertedEnComponent,
     MdConvertedDeComponent,
     CommonModule,
