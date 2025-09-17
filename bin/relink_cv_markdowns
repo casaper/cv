@@ -1,0 +1,26 @@
+#!/usr/bin/env zsh
+
+script_self_path="$(
+  cd -- "$(dirname "$0")" >/dev/null 2>&1
+  pwd -P
+)"
+export PROJECT_ROOT_PATH="$(dirname "$script_self_path")"
+
+function hard_link_cv_markdown() {
+  local lang="${1:-en}"
+  local scr_path="${MD_LN_SRC_PATH}_${lang}.md"
+  local dest_path="${PROJECT_ROOT_PATH}/libs/md-converted/src/mds/${lang}.md"
+
+  [[ -d "$(dirname "$dest_path")" ]] || mkdir -p "$(dirname "$dest_path")"
+  [[ -f "$scr_path" ]] || {
+    echo "Source markdown file not found: $scr_path" >&2
+    return 1
+  }
+
+  echo -e "\nHard linking $scr_path"
+  echo -e "          to $dest_path"
+  ln -f "$scr_path" "$dest_path"
+}
+
+hard_link_cv_markdown "en"
+hard_link_cv_markdown "de"
