@@ -8,18 +8,29 @@
   "targets": {
     "pre-build": {
       "executor": "nx:run-commands",
-      "outputs": [
-        "{workspaceRoot}/libs/md-converted/src/lib/en.component.html",
-        "{workspaceRoot}/libs/md-converted/src/lib/de.component.html"
+      "inputs": [
+        "{workspaceRoot}/libs/md-converted/src/mds/*.md"
       ],
-      "cache": false,
+      "outputs": [
+        "{workspaceRoot}/libs/md-converted/src/lib/*.component.html"
+      ],
       "options": {
-        "command": "tsx libs/md-converted/pre-build/convert-md-to-template.ts"
+        "command": "tsx libs/md-converted/pre-build/convert-md-to-template.ts",
+        "color": true
       }
     },
     "build": {
       "executor": "@nx/angular:ng-packagr-lite",
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "inputs": [
+        "{workspaceRoot}/libs/md-converted/src/mds/*.md",
+        {
+          "dependentTasksOutputFiles": "{workspaceRoot}/libs/md-converted/src/lib/*.component.html",
+          "transitive": true
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/dist/{projectRoot}"
+      ],
       "options": {
         "project": "libs/md-converted/ng-package.json",
         "tsConfig": "libs/md-converted/tsconfig.lib.json"
@@ -31,7 +42,9 @@
         "development": {}
       },
       "defaultConfiguration": "production",
-      "dependsOn": ["pre-build"]
+      "dependsOn": [
+        "pre-build"
+      ]
     },
     "lint": {
       "executor": "@nx/eslint:lint"
