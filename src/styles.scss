@@ -6,18 +6,40 @@
 md-converted-en,
 md-converted-de {
   h2 {
-    @apply text-2xl lg:text-4xl font-bold mt-5 mb-1;
+    @apply text-2xl font-bold lg:text-4xl;
+    margin-top: 1.25rem;
+    margin-bottom: 0.25rem;
   }
 
   h3 {
-    @apply text-xl lg:text-2xl font-medium mt-2 mb-0.5;
+    @apply text-xl font-medium lg:text-2xl;
+    margin-top: 0.5rem;
+    margin-bottom: 0.125rem;
   }
 
   h4 {
-    @apply text-lg font-medium mt-2 mb-0.5;
+    @apply text-lg font-medium;
+    margin-top: 0.5rem;
+    margin-bottom: 0.125rem;
   }
 
-  li {
-    @apply list-inside list-disc;
+  ul {
+    list-style: disc inside;
+    margin-block-start: 0.125rem;
+    margin-block-end: 1rem;
+    padding-inline-start: 0.25rem;
+  }
+
+  li, p {
+    @apply font-light;
+    font-size: 1.05rem;
+  }
+
+  a[target='_blank'] {
+    text-decoration-line: underline;
+
+    &:hover {
+      text-decoration-line: none;
+    }
   }
 }
