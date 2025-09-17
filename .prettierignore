@@ -11,3 +11,4 @@ libs/md-converted/src/mds
 /.vscode
 /tmp
 /.angular
+src/index.html
