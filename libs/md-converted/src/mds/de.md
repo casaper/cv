@@ -2,7 +2,7 @@
 
 ## Zusammenfassung
 
-Angular/TypeScript Spezialist mit 9+ Jahren Erfahrung in der Entwicklung von Unternehmensapplikationen für das Schweizer Gesundheitswesen (Helsana), Bildungssektor (ETH) und Telekommunikation. Leitete die Modernisierung von Legacy-Systemen und erreichte dabei 5-fache Leistungssteigerungen. Experte für Progressive Web Applications, Cloud Migration ([Google Cloud Run][CloudRun]) und API-Entwicklung (GraphQL).
+**Angular**/**TypeScript** Spezialist mit **9+** Jahren Erfahrung in der Entwicklung von Unternehmensapplikationen für das Schweizer Gesundheitswesen (Helsana), Bildungssektor (ETH) und Telekommunikation. Leitete die Modernisierung von Legacy-Systemen und erreichte dabei 5-fache Leistungssteigerungen. Experte für Progressive Web Applications, Cloud Migration ([Google Cloud Run][CloudRun]) und API-Entwicklung (**GraphQL**/**REST**) sowie Dokumentation/Tooling (**OpenAPI**).
 
 ## Technische Kompetenzen
 
@@ -85,13 +85,6 @@ Vielfältige berufliche Erfahrungen in verschiedenen Bereichen:
 - Feldeinsätze bei [Iglu-Dorf GmbH][iglu-dorf]
 - Landschaftsbau bei Trüb für Grün AG und Berger Gartenbau
 - Verschiedene Rollen zur Entwicklung praktischer Fähigkeiten in Organisation, Projektkoordination und Kundenbetreuung
-
-## Ausgewählte Projekte
-
-- **EduApp (ETH)**: [Vue.js][Vue] und Spring Boot PWA für Studierende mit Offline-Funktionalität
-- **Fiber Mission (Sunrise)**: [Angular]/[Ionic] Servicetechniker-Applikation
-- **Controllr ERP**: Leitung der [Rails] zu [Google Cloud Run][CloudRun] Modernisierung
-- **EasySales (Helsana)**: [Angular]-Applikation für Krankenversicherungsberater und Kunden
 
 ## Ausbildung & Zertifikate
 

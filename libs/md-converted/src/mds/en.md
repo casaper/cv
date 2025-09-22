@@ -1,9 +1,8 @@
 <!-- @include: ./abbrs.en.md -->
 
-
 ## Professional Summary
 
-Angular/TypeScript specialist with 9+ years building enterprise applications for Swiss healthcare (Helsana), education (ETH), and telecommunications sectors. Led modernisation of legacy systems, achieving 5x performance improvements. Expert in progressive web applications, cloud migration ([Google Cloud Run][CloudRun]), and API development (GraphQL).
+**Angular**/**TypeScript** specialist with **9+** years building enterprise applications for Swiss healthcare (Helsana), education (ETH), and telecommunications sectors. Led modernisation of legacy systems, achieving 5x performance improvements. Expert in progressive web applications, cloud migration ([Google Cloud Run][CloudRun]), and API development (**GraphQL**/**REST**) and Documentation/Tooling (**OpenAPI**).
 
 ## Technical Skills
 
@@ -33,7 +32,7 @@ PostgreSQL (Schema design/optimisation), MySQL, [BigQuery], [ActiveRecord], [Pri
 
 ### Architecture
 
-System design, [DDD] (Domain-driven design), Legacy system modernisation
+System design, Domain-driven design ([DDD]), Legacy system modernisation
 
 ## Professional Experience
 
@@ -86,13 +85,6 @@ Gained diverse professional experience across multiple fields including:
 - Field operations with [Iglu-Dorf GmbH][iglu-dorf]
 - Landscaping with Trüb für Grün AG and Berger Gartenbau
 - Various roles developing practical skills in organisation, project coordination, and client relations
-
-## Selected Projects
-
-- **EduApp (ETH)**: [Vue.js][Vue] and Spring Boot PWA for students with offline capabilities
-- **Fiber Mission (Sunrise)**: [Angular]/[Ionic] service technician application
-- **Controllr ERP**: Led [Rails] to [Google Cloud Run][CloudRun] modernization
-- **EasySales (Helsana)**: [Angular] application for health insurance agents and customers
 
 ## Education & Certifications
 
