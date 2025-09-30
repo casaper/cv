@@ -1,0 +1,35 @@
+{
+  "title": "Kaspar Vollenweider",
+  "subtitle": "Senior Angular Developer | TypeScript Expert",
+  "portraitAlt": "Portrait of Kaspar Vollenweider",
+  "header": {
+    "home": {
+      "title": "Home Area on Open Street Map",
+      "switzerland": ", Switzerland",
+      "srOnly": "8005 Zürich, Switzerland",
+      "href": "https://www.openstreetmap.org/#map=18/47.383318/8.529403"
+    },
+    "email": {
+      "title": "Email Contact",
+      "href": "mailto:me@casaper.dev",
+      "text": "me@casaper.dev"
+    },
+    "phone": {
+      "title": "Phone Contact",
+      "numberWide": "076 286 29 98",
+      "numberNarrow": "0762862998",
+      "srOnly": "Phone +41 76 286 29 98",
+      "href": "tel:0041762862998"
+    },
+    "linkedin": {
+      "title": "LinkedIn.com Profile",
+      "href": "https://www.linkedin.com/in/kaspar-vollenweider/",
+      "text": "LinkedIn"
+    },
+    "github": {
+      "title": "GitHub.com Profile",
+      "href": "https://github.com/casaper/",
+      "text": "GitHub"
+    }
+  }
+}

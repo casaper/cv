@@ -51,3 +51,7 @@ testem.log
 
 .angular
 libs/md-converted/src/lib/*.component.html
+libs/md-converted/src/pdfs/*
+!libs/md-converted/src/pdfs/.gitkeep
+libs/md-converted/src/odts/*
+!libs/md-converted/src/odts/template-*.odt

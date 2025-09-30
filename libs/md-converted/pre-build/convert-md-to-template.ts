@@ -1,4 +1,4 @@
-import { langs, renderMarkdownToComponentTemplate } from './utils';
+import { langs, renderMarkdownToComponentTemplate } from './functions';
 
 const convertMdForAllLangs = async () => {
   for (const lang of langs) {

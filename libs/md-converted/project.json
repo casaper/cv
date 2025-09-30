@@ -40,6 +40,18 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint"
+    },
+    "pdfs": {
+      "executor": "nx:run-commands",
+      "inputs": ["{workspaceRoot}/libs/md-converted/src/mds/*.md"],
+      "outputs": [
+        "{workspaceRoot}/libs/md-converted/src/lib/pdfs/*.pdf",
+        "{workspaceRoot}/libs/md-converted/src/lib/odts/CV_Kaspar_Vollenweider_*.odt"
+      ],
+      "options": {
+        "command": "tsx libs/md-converted/pre-build/convert-md-to-odt-pdf.ts",
+        "color": true
+      }
     }
   }
 }
