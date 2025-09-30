@@ -21,11 +21,23 @@ import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 import { appRoutes } from './app.routes';
 import { FALLBACK_LANG } from './constants/i18n';
 
+export const appTranslateServiceProviders = [
+  provideHttpClient(withFetch()),
+  provideTranslateService({
+    loader: provideTranslateHttpLoader({
+      prefix: 'i18n/',
+      suffix: '.json',
+    }),
+    fallbackLang: FALLBACK_LANG,
+    useDefaultLang: true,
+  }),
+];
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideHttpClient(withFetch()),
+    ...appTranslateServiceProviders,
     provideRouter(
       appRoutes,
       // withDebugTracing(),
@@ -36,13 +48,5 @@ export const appConfig: ApplicationConfig = {
       withComponentInputBinding() // enable @Input binding from route data
     ),
     provideClientHydration(withEventReplay()),
-    provideTranslateService({
-      loader: provideTranslateHttpLoader({
-        prefix: 'i18n/',
-        suffix: '.json',
-      }),
-      fallbackLang: FALLBACK_LANG,
-      useDefaultLang: true,
-    }),
   ],
 };
